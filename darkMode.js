@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark Mode
 // @namespace    https://github.com/CleoMenezesJr
-// @version      1.0.0
+// @version      1.0.1
 // @description  Force dark mode in a dumb way
 // @author       Cleo Menezes Jr.
 // ==/UserScript==
@@ -35,7 +35,8 @@
         }
 
         // Check if any class contains "light" and replace it with "dark"
-        let hasColorSchemeClass[html, body].forEach(element => {
+        let hasColorSchemeClass;
+        [html, body].forEach(element => {
             const classes = Array.from(element.classList);
             classes.forEach(className => {
                 if (className.includes('light') || className.includes('dark')) {
@@ -57,7 +58,6 @@
         const hasDarkValue = Array.from(html.attributes).some(attr =>
             attr.name.includes('dark') || attr.value.includes('dark')
         );
-        console.log(html)
 
         if (!hasDarkValue) {
             html.classList.add('invert-colors');
