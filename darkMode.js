@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark Mode
 // @namespace    https://github.com/CleoMenezesJr
-// @version      1.0.2
+// @version      1.0.3
 // @description  Force dark mode in a dumb way
 // @author       Cleo Menezes Jr.
 // ==/UserScript==
@@ -74,7 +74,7 @@
     window.addEventListener("load", () => {
         setTimeout(() => {
             setDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        }, "300");
+        }, "1000");
     });
 
 })();
