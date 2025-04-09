@@ -1,0 +1,24 @@
+/* ==============================
+ Dark Mode
+ ============================== */
+@media (prefers-color-scheme: dark) {
+    .invert-colors {
+        filter: invert(1) !important;
+    }
+
+    .invert-colors [src],
+    .invert-colors [fill],
+    .invert-colors svg,
+    .invert-colors path,
+    .invert-colors img,
+    .invert-colors video,
+    .invert-colors button,
+    .invert-colors header,
+    .invert-colors footer,
+    .invert-colors #footer,
+    .invert-colors [style*="background-image"],
+    .invert-colors .icon
+    {
+        filter: invert(1) !important;
+    }
+}
