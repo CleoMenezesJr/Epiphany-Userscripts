@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark Mode
 // @namespace    https://github.com/CleoMenezesJr
-// @version      1.0.1
+// @version      1.0.2
 // @description  Force dark mode in a dumb way
 // @author       Cleo Menezes Jr.
 // ==/UserScript==
@@ -12,7 +12,7 @@
         const body = document.body;
 
         // Blacklist websites
-        const blacklistHostnames = ['mail.proton.me', 'dev-api.governa.cl', 'codeberg.org', 'multicanais', 'mastodon.social', 'floss.social'];
+        const blacklistHostnames = ['exemple.org'];
         if (blacklistHostnames.includes(window.location.hostname)) {
             return;
         }
