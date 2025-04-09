@@ -1,4 +1,4 @@
-# Epiphany Userscript
+# Epiphany Userscripts
 
 A collection of userscripts for GNOME Web (Epiphany).
 
